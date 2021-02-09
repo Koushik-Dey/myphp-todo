@@ -22,6 +22,14 @@ try {
     $stmt->execute ();
 
    $todos=$stmt->fetchAll ();
-   var_dump($todos);
+   
+
+   foreach ($todos  as $todo) {
+       
+      echo $todo ['title'];
+      echo"<br>";
+    // var_dump($todo);
+
+   }
 
 ?>
